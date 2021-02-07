@@ -7,7 +7,9 @@ using StarChart.Data;
 
 namespace StarChart.Controllers
 {
-    public class CelestialObjectController : Controller
+
+    [Route("")]
+    public class CelestialObjectController : ControllerBase
     {
 
         private readonly ApplicationDbContext _context;
@@ -16,7 +18,6 @@ namespace StarChart.Controllers
         {
             _context = ApplicationDbContext;
         }
-        [Route("")]
         public IActionResult Index()
         {
             return View();
