@@ -19,9 +19,5 @@ namespace StarChart.Controllers
         {
             _context = ApplicationDbContext;
         }
-        public IActionResult Index()
-        {
-            return View();
-        }
     }
 }
